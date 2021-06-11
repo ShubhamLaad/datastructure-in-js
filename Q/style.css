@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+li,ul {
+    list-style: none;
+}
+.flex {
+    display: flex;
+}
+.text-center {
+    text-align: center;
+}
+.left-section {
+    flex-basis: 30%;
+    height: calc(100vh - 120px);
+}
+.right-section {
+    flex-basis: 70%;
+    height: calc(100vh - 60px);
+}
+header, footer {
+    height: 25vh;
+}
