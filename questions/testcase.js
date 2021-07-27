@@ -1,3 +1,3 @@
 function test(input, ouput) {
-    console.log(`${input} expected ${eval(input)} to be ${ouput}`)
+    console.log(`${input} %cexpected %c ${eval(input)} %cto be`, 'color: blue', 'color:black', 'color:blue', `${ouput}`)
 }
