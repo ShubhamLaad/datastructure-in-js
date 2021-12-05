@@ -30,5 +30,5 @@ console.log(findLongestSubstring('tmmabct'))//5
 // Step 4: Solve Or Simplify  =>
 //      Find core difficulty what trying to do
 //      Tmp igonere that dificulty
-// write si mplified solutyion
+// write si mplified solution
 // then incorporate that difficulty back in

@@ -1,4 +1,7 @@
 // Note: import of priorityQueue before WeightedGraph file in index.html
+// <script src="./BinaryHeap/PriorityQueue.js"></script>
+// <script src="./Graph/WeightedGraph.js"></script>
+
 class WeightedGraph {
     constructor() {
         this.adjacencyList = {}
@@ -98,9 +101,7 @@ graph.addEdge("D", "E", 3);
 graph.addEdge("D", "F", 1);
 graph.addEdge("E", "F", 1);
 
-// console.log(graph.adjacencyList)
-
-
-console.log(graph.dijkstra("A", "F"))
+console.log('graph.adjacencyList', graph.adjacencyList)
+console.log('graph.dijkstra("A", "F")', graph.dijkstra("A", "F"))
 
 

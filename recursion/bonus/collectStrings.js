@@ -1,4 +1,5 @@
-// <p>Write a function called&nbsp;<code>collectStrings</code>&nbsp;which accepts an object and returns an array of all the values in the object that have a typeof string</p>
+// <p>Write a function called&nbsp;<code>collectStrings</code>&nbsp;which accepts an object and 
+// returns an array of all the values in the object that have a typeof string</p>
 
 const obj = {
     stuff: "foo",

@@ -39,3 +39,4 @@ function countZeroes(arr) {
         }
         return 0
     }
+}

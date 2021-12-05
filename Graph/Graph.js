@@ -99,5 +99,8 @@ g.addEdge('E', 'C')
 g.addEdge('E', 'F')
 
 console.log(g.adjacencyList)
-console.log(g.breadthFirst('A'))
+console.log("g.breadthFirst('A')", g.breadthFirst('A'))
+console.log("g.depthFirstIterative('A')", g.depthFirstIterative('A'))
 
+// > for breath first use queue
+// > for depth first use stack
