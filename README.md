@@ -1,9 +1,6 @@
 # datastructure-in-js
 udemy DS questions and notes
 
-## Notes
-https://cs.slides.com/colt_steele/problem-solving-patterns
-
 ### Problem Solving Patterns
 Frequency Counter
 Multiple Pointers
@@ -12,40 +9,46 @@ Divide and Conquer
 Dynamic Programming
 Greedy Algorithms
 Backtracking
+> https://cs.slides.com/colt_steele/problem-solving-patterns
 
-### Frequency Counter
-This pattern uses objects or sets to collect values/frequencies of values
-This can often avoid the need for nested loops or O(N^2) operations with arrays / strings
 
+### Recursion
 recursions store function in call stack until break points comes then it pop from stack.
-Break point: function which run full is pop from stack its not mandatory that it has return statement.
-eg: look DFS function of tree
+
+##### eg of factorial of number
+mathametical representation of code
+```
+fac(n) = fac(n-1) * n, where n > 0 and fac(1) = 1
+```
+*** breaking condition:** return result of function on constant value
+
+Code:
+```
+function fac(n) {
+    if(n === 1) {
+        return 1; // break condition
+    }
+    return fac(n-1) * n;
+}
+
+```
+
+> for breath first use queue
+> for depth first use stack
 
 
-for breadth first use queue
-for defth first use stack
-
-
+#### Tree
 // PreorityQueue insert Olog(n) (log base 2 n)
 // removal also hv Olog(n)
 
 // PriorityQueue is min binary tree but have node with priority values
-// WeightGraph dijkstra algo things learn is priority queue can hve multiple values and try to use diff DS for diffrent types of opration. Like here we use priority queue as well as object for storing distace.
+// WeightGraph Dijkstra algo things learn is priority queue can hve multiple values and try to use diff DS for diffrent types of opration. Like here we use priority queue as well as object for storing distace.
 where object only use for storing and with unic value
 where priority queue only use for getting sort value here value can be repeatative
 
 
 
-### Divide and Conquer
-When arry is sorted this method algo can apply
-
-
-
-
-
-
-
-Interview
+### Interview
 
 objec freez
 event loop, callback work, web workers
@@ -69,7 +72,7 @@ unit testing
 axios token managment = Axios Interceptors
 
 
-JP Q=>
+###### JQ
 
 flex property with width height dynamic
 SEO
@@ -94,7 +97,7 @@ React
 function component how work
 
 
-nagarow
+###### nag
 
 hof =  A Higher-Order function is a function that receives a function as an argument or returns the function as output.
 reducer, msp, filter
@@ -109,3 +112,5 @@ forwarding ref
 
 
 diff ex of hooks
+
+
