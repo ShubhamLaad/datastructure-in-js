@@ -1,5 +1,37 @@
-# datastructure-in-js
-udemy DS questions and notes
+## JavaScript Algorithms and Data Structures Masterclass on Udemy
+Link to course: https://www.udemy.com/js-algorithms-and-data-structures-masterclass/?persist_locale&locale=en_US
+
+#### Coding Exercises of the course:
+- [Problem solving patterns](problem-solving-patterns)
+    - [Frequency Counter Pattern](problem-solving-patterns/frequency-counter)
+    - [Multiple Pointers Pattern](problem-solving-patterns/multiple-pointers)
+    - [Sliding Window Pattern](problem-solving-patterns/sliding-window)
+    - [Divide And Conquer Pattern](problem-solving-patterns/divide-and-conquer)
+- [Bit manipulation](bit-manipulation) ?
+- [Recursion](recursion)
+- [Sorting Algorithms](sorting-algorithms)
+    - [Bubble Sort](sorting-algorithms/bubbleSort.js)
+    - [Selection Sort](sorting-algorithms/selectionSort.js)
+    - [Insertion Sort](sorting-algorithms/insertionSort.js)
+    - [Merge Sort](sorting-algorithms/mergeSort.js)
+    - [Quick Sort](sorting-algorithms/quickSort.js)
+    - [Radix Sort](sorting-algorithms/radixSort.js) ?
+- [Linked List](data-structures)
+    - [Singly Linked List](data-structures/SinglyLinkList.js)
+    - [Doubly Linked List](data-structures/DoublyLinkList.js)
+    - [Stack](data-structures/Stack.js)
+    - [Queue](data-structures/Queue.js)
+    - [Binary Search Tree](data-structures/BinarySearchTree.js)
+    - [Binary Heap](data-structures/BinaryHeap.js)
+    - [Priority Queue](data-structures/PriorityQueue.js)
+    - [Hash Table](data-structures/hashtable.js) ?
+    - [Graph](data-structures/Graph.js)
+    - [WeightedGraph](data-structures/WeightedGraph.js.js)
+    - [Trie](data-structures/trie.js) ?
+- [Dynamic Programming](dynamic-programming) `progress`
+- [Other algorithms](other-algorithms) ?
+    - [Factorial of large number](other-algorithms/factorial-of-large-number.js)
+- [Practise Questions](practise-questions)
 
 ### Problem Solving Patterns
 Frequency Counter
