@@ -74,7 +74,7 @@ function fac(n) {
 // removal also hv Olog(n)
 
 // PriorityQueue is min binary tree but have node with priority values
-// WeightGraph Dijkstra algo things learn is priority queue can hve multiple values and try to use diff DS for diffrent types of opration. Like here we use priority queue as well as object for storing distace.
+// WeightGraph Dijkstra algo things learn is priority queue can have multiple values and try to use different DS for diffrent types of opration. Like here we use priority queue as well as object for storing distance.
 where object only use for storing and with unic value
 where priority queue only use for getting sort value here value can be repeatative
 
@@ -129,7 +129,7 @@ React
 function component how work
 
 
-###### nag
+###### React
 
 hof =  A Higher-Order function is a function that receives a function as an argument or returns the function as output.
 reducer, msp, filter

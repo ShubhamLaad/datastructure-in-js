@@ -1,4 +1,3 @@
-// Coding Exercise 2: Multiple Pointers - countUniqueValues
 
 countUniqueValues([-1, -1, 0, 1, 1, 2, 3, 3, 3]) // 5
 countUniqueValues([0, 1, 1, 2, 3, 3, 3]) // 4
@@ -16,3 +15,5 @@ function countUniqueValues(arr) {
     return count;
 
 }
+
+
