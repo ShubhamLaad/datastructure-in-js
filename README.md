@@ -1,6 +1,16 @@
 ## JavaScript Algorithms and Data Structures Masterclass on Udemy
 Link to course: https://www.udemy.com/js-algorithms-and-data-structures-masterclass/?persist_locale&locale=en_US
 
+### What u learn
+Step 1: Understand The Problem
+Step 2: Concrete Examples => ask question type of input / output
+Step 3: Break It Down => write code in words or rough idea(sudo code) on notepade or in code
+Step 4: Solve Or Simplify  =>
+     Find core difficulty what trying to do
+     Tmp igonere that dificulty
+write si mplified solution
+then incorporate that difficulty back in
+
 #### Coding Exercises of the course:
 - [Problem solving patterns](problem-solving-patterns)
     - [Frequency Counter Pattern](problem-solving-patterns/frequency-counter)

@@ -17,7 +17,7 @@ minSubArrayLen([4, 3, 3, 8, 1, 2, 3], 11) // 2
 minSubArrayLen([1, 4, 16, 22, 5, 7, 8, 9, 10], 95) // 0
 
 function minSubArrayLen(arr, integer) {
-    let l = 0, r = 0, minLen = Infinity, minLenSum = -Infinity, sum = 0;
+    let l = 0, r = 0, sum = 0;
     while (r < arr.length) {
         if (arr[r] >= integer) {
             return 1;
