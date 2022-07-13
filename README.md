@@ -1,7 +1,7 @@
 ## JavaScript Algorithms and Data Structures Masterclass on Udemy
 Link to course: https://www.udemy.com/js-algorithms-and-data-structures-masterclass/?persist_locale&locale=en_US
 
-### What u learn
+### How to write program
 Step 1: Understand The Problem
 Step 2: Concrete Examples => ask question type of input / output
 Step 3: Break It Down => write code in words or rough idea(sudo code) on notepade or in code
@@ -20,6 +20,7 @@ then incorporate that difficulty back in
 - [Bit manipulation](bit-manipulation) ?
 - [Recursion](recursion)
 - [Sorting Algorithms](sorting-algorithms)
+    - [JS Sort](sorting-algorithms/js-sort.js)
     - [Bubble Sort](sorting-algorithms/bubbleSort.js)
     - [Selection Sort](sorting-algorithms/selectionSort.js)
     - [Insertion Sort](sorting-algorithms/insertionSort.js)
@@ -53,9 +54,16 @@ Greedy Algorithms
 Backtracking
 > https://cs.slides.com/colt_steele/problem-solving-patterns
 
+- [JS Sort](sorting-algorithms/js-sort.js)
+```
+    function comparator(num1, num2) {
+        return num1 - num2 // num1 comes 1st if return -1, means num1 < num2
+    }
+```
 
 ### Recursion
 recursions store function in call stack until break points comes then it pop from stack.
+- [Merge Sort](sorting-algorithms/mergeSort.js)
 
 ##### eg of factorial of number
 mathametical representation of code

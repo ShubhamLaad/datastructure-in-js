@@ -1,5 +1,5 @@
 console.log('%c Hi bubble', 'background: yellow')
-
+// Swap on ervery step and every itration large element will be at last
 function bubbleSort(arr, comparator) {
     if (typeof comparator !== 'function') {
         comparator = function (a, b) {
