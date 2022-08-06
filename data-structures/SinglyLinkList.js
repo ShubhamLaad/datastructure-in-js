@@ -5,7 +5,7 @@ class Node {
     }
 }
 
-class SinglyLinkedList {
+export class SinglyLinkedList {
     constructor() {
         this.head = null;
         this.tail = null;
@@ -135,12 +135,24 @@ class SinglyLinkedList {
         }
         return arr
     }
+
+    rotate(rotateCount) {
+        // 1    ->  2->  3-> 4   ->5 
+        // h    ->  c              t
+        //   3-> 4   ->5 -> 1 -> 2
+        if (rotateCount < 0) return this.reverse()
+        if (!this.head || !rotateCount && rotateCount <= this.length) return this;
+        let current = this.head
+        for (let i = 1; current && i <= rotateCount - 1; current = current.next, i++);
+        this.tail.next = this.head // Join tail to head
+        this.head = current.next   // new head
+        this.tail = current
+        this.tail.next = null
+        return this
+    }
 }
 
-const singlyLinkedList = new SinglyLinkedList();
-singlyLinkedList.push(5).push(10).push(15).push(20)
-console.log(singlyLinkedList.print())
-// console.log(singlyLinkedList)
+// const singlyLinkedList = new SinglyLinkedList();
 // singlyLinkedList.push(5).push(10).push(15).push(20);
 // singlyLinkedList.insert(2, 12)            // true
 // singlyLinkedList.insert(100, 12);            // false

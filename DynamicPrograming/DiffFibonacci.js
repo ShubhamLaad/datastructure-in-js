@@ -15,7 +15,7 @@ function normalFibonacci(n) {
 // topdown approch
 // Optimal Substructure
 // . Enter Memoization!
-function memoFibonacci(n, memo = { 0: undefined, 1: 1, 2: 1 }) {
+function memoFibonacci(n, memo = [undefined, 1, 1]) {
     if (memo[n]) return memo[n]
     memo[n] = memoFibonacci(n - 1, memo) + memoFibonacci(n - 2, memo)
     // console.log(memo)
@@ -28,11 +28,22 @@ function memoFibonacci(n, memo = { 0: undefined, 1: 1, 2: 1 }) {
 function itrativeFibonacci(n) {
     let fib = 1
     let x = 0, y = 1
-    for (let i = 1; i < n; i++) {
+    for (let i = 1; i <= n; i++) {
         fib = x + y
         x = y
         y = fib
     }
     return fib
 }
+
+
+function fibTable(n) {
+    if (n <= 2) return 1;
+    const fibNums = [0, 1, 1]
+    for (let i = 3; i <= n; i++) {
+        fibNums[i] = fibNums[i - 1] + fibNums[i - 2]
+    }
+    return fibNums[n]
+}
+
 
