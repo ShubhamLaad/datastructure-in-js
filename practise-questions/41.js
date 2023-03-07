@@ -18,24 +18,25 @@ countZeroes([1,1,1,1])// 0
            l
 */
 
-
 function countZeroes(arr) {
-    let right = arr.length - 1
-    let left = 0;
+  let right = arr.length - 1;
+  let left = 0;
 
-    if (arr[left] === 0) {
-        while (right >= left) {
-            let middle = Math.floor((right - left) / 2) + left
-            if (arr[middle] === 1 && arr[middle + 1] === 0) {
-                // succes condition
-                return arr.length - middle - 1
-            }
-            if (arr[middle] === 0) {
-                right = middle - 1
-            } else {
-                left = middle + 1
-            }
-        }
-        return 0
+  if (arr[left] === 0) {
+    while (right >= left) {
+      let middle = Math.floor((right - left) / 2) + left;
+      if (arr[middle] === 1 && arr[middle + 1] === 0) {
+        // succes condition
+        return arr.length - middle - 1;
+      }
+      if (arr[middle] === 0) {
+        right = middle - 1;
+      } else {
+        left = middle + 1;
+      }
     }
+    return 0;
+  }
 }
+
+module.exports = countZeroes;
