@@ -1,84 +1,90 @@
-console.log('%c Hi insertionSort', 'background: yellow')
+console.log('%c Hi insertionSort', 'background: yellow');
 
 function insertInSortedArr(sortedArr, value) {
-    for (let i = sortedArr.length - 1; i >= 0; i--) {
-        if (value < sortedArr[i]) {
-            sortedArr[i + 1] = sortedArr[i]
-        } else {
-            sortedArr[i + 1] = value
-            return sortedArr
-        }
+  for (let i = sortedArr.length - 1; i >= 0; i--) {
+    if (value < sortedArr[i]) {
+      sortedArr[i + 1] = sortedArr[i];
+    } else {
+      sortedArr[i + 1] = value;
+      return sortedArr;
     }
-    sortedArr[0] = value
-    return sortedArr
+  }
+  sortedArr[0] = value;
+  return sortedArr;
 }
 
 // test('insertInSortedArr([2,5,7,9,18], 6)', [2, 5, 6, 7, 9, 18])
 
 function insertionSort(arr, comparator) {
-    if (typeof comparator !== 'function') {
-        comparator = function (a, b) {
-            return a - b
-        }
-    }
+  if (typeof comparator !== 'function') {
+    comparator = function (a, b) {
+      return a - b;
+    };
+  }
 
-
-    let sortedArr = [arr[0]]
-    for (let i = 1; i < arr.length; i++) {
-        sortedArr = insertInSortedArr(sortedArr, arr[i])
-    }
-    return sortedArr
+  let sortedArr = [arr[0]];
+  for (let i = 1; i < arr.length; i++) {
+    sortedArr = insertInSortedArr(sortedArr, arr[i]);
+  }
+  return sortedArr;
 }
 
 function descSort(a, b) {
-    return b - a
+  return b - a;
 }
-test('insertionSort([0, -10, 7, 4], descSort)', [7, 4, 0, -10])
 
-test('insertionSort([1, 3, 5, 2, 3])', [1, 2, 3, 3, 5])
-test('insertionSort([])', '')
-var nums = [4, 3, 5, 3, 43, 232, 4, 34, 232, 32, 4, 35, 34, 23, 2, 453, 546, 75, 67, 4342, 32];
-var sorted = [2, 3, 3, 4, 4, 4, 5, 23, 32, 32, 34, 34, 35, 43, 67, 75, 232, 232, 453, 546, 4342]
+test('insertionSort([0, -10, 7, 4], descSort)', [7, 4, 0, -10]);
+
+test('insertionSort([1, 3, 5, 2, 3])', [1, 2, 3, 3, 5]);
+test('insertionSort([])', '');
+var nums = [
+  4, 3, 5, 3, 43, 232, 4, 34, 232, 32, 4, 35, 34, 23, 2, 453, 546, 75, 67, 4342,
+  32,
+];
+var sorted = [
+  2, 3, 3, 4, 4, 4, 5, 23, 32, 32, 34, 34, 35, 43, 67, 75, 232, 232, 453, 546,
+  4342,
+];
 test(`insertionSort(nums)`, sorted);
 
-
 function stringSort(a, b) {
-    if (a < b) return -1
-    if (b > a) return 1
-    return 0
+  if (a < b) return -1;
+  if (b > a) return 1;
+  return 0;
 }
 
-
-var kitties = ["LilBub", "Garfield", "Heathcliff", "Blue", "Grumpy"];
-const sortedKitties = ["Blue", "Garfield", "Grumpy", "Heathcliff", "LilBub"]
+var kitties = ['LilBub', 'Garfield', 'Heathcliff', 'Blue', 'Grumpy'];
+const sortedKitties = ['Blue', 'Garfield', 'Grumpy', 'Heathcliff', 'LilBub'];
 // test('kitties.sort(stringSort)', sortedKitties)
 // test('insertionSort(kitties, stringSort)', sortedKitties)
 
-var moarKittyData = [{
-    name: "LilBub",
-    age: 7
-}, {
-    name: "Garfield",
-    age: 40
-}, {
-    name: "Heathcliff",
-    age: 45
-}, {
-    name: "Blue",
-    age: 1
-}, {
-    name: "Grumpy",
-    age: 6
-}]
+var moarKittyData = [
+  {
+    name: 'LilBub',
+    age: 7,
+  },
+  {
+    name: 'Garfield',
+    age: 40,
+  },
+  {
+    name: 'Heathcliff',
+    age: 45,
+  },
+  {
+    name: 'Blue',
+    age: 1,
+  },
+  {
+    name: 'Grumpy',
+    age: 6,
+  },
+];
 function oldestToYoungest(a, b) {
-    return a.age - b.age;
+  return a.age - b.age;
 }
 
 console.log(insertionSort(moarKittyData, oldestToYoungest)); //sorted by age in descending order
-
-
-
-
 
 /*
 <p>Implement <code>insertionSort</code>&nbsp; . Given an array, both algorithms will sort the values in the
